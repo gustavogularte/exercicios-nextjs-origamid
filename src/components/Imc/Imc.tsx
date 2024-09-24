@@ -10,7 +10,9 @@ const Imc = () => {
 
   function calcularImc(event: React.FormEvent) {
     event.preventDefault();
-    const imc = +peso / ((+altura/100) * (+altura/100));
+    const alturaM = +altura / 100;
+    const pesoKg = +peso / 100;
+    const imc = +peso / (alturaM * pesoKg);
     setImc(imc);
   }
 
