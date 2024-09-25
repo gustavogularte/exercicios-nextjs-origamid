@@ -1,11 +1,9 @@
 import Link from 'next/link';
 import { CursoParamsType, CursoType } from '../cursos.types';
+import { getCurso } from '../api/api';
 
 export default async function CursoPage({ params }: CursoParamsType) {
-  const response = await fetch(
-    `https://api.origamid.online/cursos/${params.curso}`
-  );
-  const curso = (await response.json()) as CursoType;
+  const curso = await getCurso(params.curso);
 
   return (
     <main>

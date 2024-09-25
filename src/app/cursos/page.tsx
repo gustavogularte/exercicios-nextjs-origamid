@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { CursosType } from './cursos.types';
+import { getCursos } from './api/api';
 
 export default async function CursosPage() {
-  const response = await fetch('https://api.origamid.online/cursos');
-  const cursos = (await response.json()) as CursosType[];
+  const cursos = await getCursos();
 
   return (
     <main>
