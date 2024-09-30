@@ -8,7 +8,7 @@ const Imc = () => {
   const [altura, setAltura] = React.useState('');
   const [imc, setImc] = React.useState<number | null>(null);
 
-  function calcularImc(event: React.FormEvent) {
+  function calcularImc(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const alturaM = +altura / 100;
     const pesoKg = +peso / 100;
