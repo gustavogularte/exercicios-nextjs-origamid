@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 type Curso = {
@@ -19,7 +20,7 @@ export default async function cursosPage() {
       <h1>Cursos</h1>
       <ul>
         {cursos.map((curso) => (
-          <li key={curso.id}>{curso.nome}</li>
+          <li key={curso.id}><Link href={`cursos/${curso.nome}`}>{curso.nome}</Link></li>
         ))}
       </ul>
     </main>
