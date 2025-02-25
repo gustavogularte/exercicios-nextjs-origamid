@@ -1,26 +1,18 @@
 import Link from 'next/link';
 import React from 'react';
-
-type Curso = {
-  id: number;
-  slug: string;
-  nome: string;
-  descricao: string;
-  total_aulas: number;
-  total_horas: number;
-};
+import { cursosApi } from '@/api/cursos';
 
 export default async function cursosPage() {
-  const api = await fetch('https://api.origamid.online/cursos');
-  const cursos = (await api.json()) as Curso[];
-  console.log(cursos);
+  const cursos = await cursosApi();
 
   return (
     <main>
       <h1>Cursos</h1>
       <ul>
         {cursos.map((curso) => (
-          <li key={curso.id}><Link href={`cursos/${curso.nome}`}>{curso.nome}</Link></li>
+          <li key={curso.id}>
+            <Link href={`cursos/${curso.slug}`}>{curso.nome}</Link>
+          </li>
         ))}
       </ul>
     </main>
