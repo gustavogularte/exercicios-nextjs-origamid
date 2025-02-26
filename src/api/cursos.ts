@@ -1,20 +1,18 @@
-import { Aula, Curso } from '@/app/cursos/[cursoId]/curso.types';
-import { CursosTypes } from '@/app/cursos/cursos.types';
+import { AulaTypes, CursosTypes, CursoTypes } from '@/app/cursos/cursos.types';
 
-export async function cursosApi() {
+export async function getCursos() {
   const api = await fetch('https://api.origamid.online/cursos');
-  const cursos = (await api.json()) as CursosTypes[];
-  return cursos;
+  return (await api.json()) as CursosTypes[];
 }
 
-export async function cursoApi(cursoSlug: string) {
-  const api = await fetch(`https://api.origamid.online/cursos/${cursoSlug}`);
-  const curso = (await api.json()) as Curso;
-  return curso;
+export async function getCurso(curso: string) {
+  const api = await fetch(`https://api.origamid.online/cursos/${curso}`);
+  return (await api.json()) as CursoTypes;
 }
 
-export async function AulaApi(aulaSlug: string) {
-  const api = await fetch(`https://api.origamid.online/cursos/${aulaSlug}`);
-  const aulas = (await api.json()) as Aula;
-  return aulas;
+export async function getAula(curso: string, aula: string) {
+  const api = await fetch(
+    `https://api.origamid.online/cursos/${curso}/${aula}`
+  );
+  return (await api.json()) as AulaTypes;
 }

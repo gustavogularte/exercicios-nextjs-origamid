@@ -1,16 +1,15 @@
-import { AulaApi } from '@/api/cursos';
+import { getAula } from '@/api/cursos';
 import React from 'react';
 
 type ParamsTypes = {
   params: {
-    aula: string[]
-  }
-}
+    curso: string;
+    aula: string;
+  };
+};
 
 export default async function AulasPage({ params }: ParamsTypes) {
-  const aulaSlug = await params.aula.join('/')
-  const aula = await AulaApi(aulaSlug)
-  console.log(aula);
+  const aula = await getAula(params.curso, params.aula);
 
   return (
     <main>

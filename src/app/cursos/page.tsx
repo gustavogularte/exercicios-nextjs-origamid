@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
-import { cursosApi } from '@/api/cursos';
+import { getCursos } from '@/api/cursos';
 
 export default async function cursosPage() {
-  const cursos = await cursosApi();
+  const cursos = await getCursos();
 
   return (
     <main>
