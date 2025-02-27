@@ -8,6 +8,8 @@ export default function Home() {
       <Link href={'/imc'}>IMC</Link>
       <h2>Exercício 2</h2>
       <Link href={'/cursos'}>Cursos</Link>
+      <h2>Exercício 3</h2>
+      <Link href={'/login'}>Login</Link>
     </main>
   );
 }
