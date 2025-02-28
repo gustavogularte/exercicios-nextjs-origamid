@@ -20,7 +20,11 @@ export async function POST(request: NextRequest) {
     });
   }
   const data = await response.json();
-  (await cookies()).set('token', data.token);
+  (await cookies()).set('token', data.token, {
+    secure: true,
+    httpOnly: true,
+    sameSite: 'lax',
+  });
   return Response.json({
     authorization: true,
   });
