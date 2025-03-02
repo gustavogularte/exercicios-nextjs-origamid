@@ -9,7 +9,7 @@ export default function Home() {
       <h2>Exercício 2</h2>
       <Link href={'/cursos'}>Cursos</Link>
       <h2>Exercício 3</h2>
-      <Link href={'/login'}>Login</Link>
+      <Link href={'/login'}>Logi</Link>
     </main>
   );
 }
