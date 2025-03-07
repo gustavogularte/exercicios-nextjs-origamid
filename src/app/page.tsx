@@ -11,7 +11,7 @@ export default function Home() {
       <h2>Exercício 3</h2>
       <Link href={'/login'}>Login</Link>
       <h2>Exercício 4</h2>
-      <Link href={'/teste'}>Teste</Link>
+      <Link href={'/teste'}>TesteAAA</Link>
     </main>
   );
 }
