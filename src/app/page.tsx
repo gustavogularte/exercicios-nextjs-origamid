@@ -10,7 +10,8 @@ export default function Home() {
       <Link href={'/cursos'}>Cursos</Link>
       <h2>Exercício 3</h2>
       <Link href={'/login'}>Login</Link>
-      <h2>Exercício 4.</h2>
+      <h2>Exercício 4</h2>
+      <Link href={'/login2'}>Login 2</Link>
     </main>
   );
 }
