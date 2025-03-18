@@ -1,5 +1,4 @@
 import Login2 from '@/components/Login2/Login2';
-import React from 'react';
 
 export default async function LoginPage() {
 

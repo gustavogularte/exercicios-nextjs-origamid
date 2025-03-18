@@ -12,6 +12,8 @@ export default function Home() {
       <Link href={'/login'}>Login</Link>
       <h2>Exercício 4</h2>
       <Link href={'/login2'}>Login 2</Link>
+      <h2>Exercício 5</h2>
+      <Link href={'/produtos'}>Produtos</Link>
     </main>
   );
 }

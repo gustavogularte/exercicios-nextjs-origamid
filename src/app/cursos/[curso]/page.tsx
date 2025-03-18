@@ -1,4 +1,3 @@
-import React from 'react';
 import { getCurso } from '@/api/cursos';
 import Link from 'next/link';
 import { ParamsTypes } from '../cursos.types';

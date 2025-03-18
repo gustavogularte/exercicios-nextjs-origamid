@@ -1,6 +1,5 @@
 import Login from '@/components/Login/Login';
 import { cookies } from 'next/headers';
-import React from 'react';
 
 type Conta = {
   autorizado: boolean;

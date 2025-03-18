@@ -1,5 +1,4 @@
 import { getAula } from '@/api/cursos';
-import React from 'react';
 
 type ParamsTypes = {
   params: {

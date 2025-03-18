@@ -1,5 +1,4 @@
 import Imc from '@/components/Imc/Imc';
-import React from 'react';
 
 export default function imcPage() {
   return (

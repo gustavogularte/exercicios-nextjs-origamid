@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
 import { getCursos } from '@/api/cursos';
 
 export default async function cursosPage() {

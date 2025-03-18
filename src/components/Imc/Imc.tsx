@@ -16,7 +16,7 @@ export default function Imc() {
 
   return (
     <article>
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         <Input
           id="peso"
           label="Peso(kg)"

@@ -1,14 +1,19 @@
 import React from 'react';
 
 type InputProps = {
-  label: string;
   id: string;
-  setValue: React.Dispatch<React.SetStateAction<string>>;
+  label: string;
+  type?: string;
   value: string;
-  type: string
+  setValue: React.Dispatch<React.SetStateAction<string>>;
 };
-
-export default function Input({ label, id, setValue, value, type }: InputProps) {
+export default function Input({
+  label,
+  id,
+  setValue,
+  value,
+  type,
+}: InputProps) {
   return (
     <div>
       <label htmlFor={id}>{label}</label>
