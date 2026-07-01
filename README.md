@@ -71,6 +71,6 @@ Este repositório tem como objetivo registrar minha evolução nos estudos de **
 
 # 🔗 Links
 
-- 📚 Projeto principal: Em andamento.
+- 📚 Projeto principal: https://github.com/gustavogularte/projeto-dogs-nextjs
 - 💼 LinkedIn: https://www.linkedin.com/in/gustavo-gularte-arend-58742a286/
 - 🌐 Meu perfil no Frontend Mentor: https://www.frontendmentor.io/profile/gustavogularte
